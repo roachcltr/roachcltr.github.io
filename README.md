@@ -1,5 +1,3 @@
-# Muhammad Hadi Baihaqie 
-
 I am an Electrical Engineering undergraduate at UPI Bandung specializing in Telecommunications, Embedded Systems, and Control Logic. Below is a detailed breakdown of my key engineering projects.
 
 ---

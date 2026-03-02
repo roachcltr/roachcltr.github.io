@@ -7,7 +7,7 @@ I am an Electrical Engineering undergraduate at UPI Bandung specializing in Tele
 ## Aerospace PID Control Simulation
 
 **Role:** Lead Developer  
-**Tools & Technologies:** MATLAB, Simulink, Kerbal Space Program (KSP), kRPC, Python  
+**Tools & Technologies:** MATLAB, Simulink, Python, Kerbal Space Program (KSP), kOS   
 **Focus:** Closed-Loop Control Systems, Flight Dynamics, Telemetry Processing  
 
 ### 1. Objective
@@ -20,16 +20,16 @@ The core challenge of this project was maintaining the rocket's stability agains
 * **Integral (I):** Accumulates past errors to correct steady-state offsets (ensuring the rocket doesn't hover just above the pad).
 * **Derivative (D):** Predicts future errors based on the rate of descent, preventing overcorrection and catastrophic lithobraking (crashing).
 
-> 📸 *(Insert a screenshot of your MATLAB/Simulink block diagram here)* > `![Simulink Block Diagram](assets/simulink.png)`
+![Simulink Block Diagram](assets/simulink.png)
 
 ### 3. Simulation Environment (Hardware-in-the-Loop Concept)
 To test the control logic without a physical rocket, I bridged MATLAB/Python with Kerbal Space Program using the kRPC server. KSP acted as the physics engine, feeding real-time altitude, velocity, and pitch data to the controller, which then sent throttle and steering commands back to the simulation.
 
-> 📸 *(Insert a screenshot of the rocket landing in KSP, maybe with the kRPC terminal open next to it)* > `![KSP Simulation](assets/Kerbal.jpeg)`
+![KSP Simulation](assets/Kerbal.jpeg)
 
 ### 4. Results & Telemetry
 The finely tuned PID controller successfully stabilized the descent vector and managed the suicide-burn timing, resulting in a fully autonomous, soft touchdown. 
 
-> 📸 *(Insert a graph/plot from MATLAB or Python showing the altitude vs. velocity over time during the landing)* > `![Telemetry Graph](assets/telemetry_plot.png)`
+![Telemetry Graph](assets/result.png)
 
 ---

@@ -102,7 +102,7 @@ To maintain optimal thermal efficiency, I programmed a dynamic relay matrix usin
 * **Variable Control:** The system automatically switches between 5V, 9V, and 12V fans and pumps based on predefined temperature brackets.
 * **Failsafe Logic:** Autonomously evaluates humidity levels and terminates the drying cycle when the chamber drops below 20%, preventing over-drying.
 
-![Main Panel](dryer_panel.jpeg)
+![Main Panel](assets/dryer_panel.jpeg)
 
 ### 3. Remote Command via Telegram API
 Because agricultural drying cycles span several hours, I integrated a bidirectional Telegram Bot API over Wi-Fi. 

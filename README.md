@@ -26,8 +26,8 @@ To test the control logic without a physical rocket, I first designed the simula
 ![KSP Simulation](assets/Kerbal.jpeg)
 
 ### 4. Results & Telemetry
-The finely tuned PID controller successfully stabilized the descent vector and managed the suicide-burn timing, resulting in a fully autonomous, soft touchdown. 
-The blue line shows the altitude of the rocket, while the yellow line shows the velocity of the rocket, as the rocket gets closer to the ground, the rocket would fall slower and finally lands softly.
+The finely tuned PID controller successfully stabilized the descent vector and managed the suicide-burn timing, resulting in a fully autonomous, soft touchdown. In the telemetry plot below (where the X-axis represents time and the Y-axis represents magnitude), the blue line shows the altitude of the rocket, while the yellow line shows the velocity. As the rocket gets closer to the ground, it falls slower and finally lands softly at 0 m/s.
+
 ![Telemetry Graph](assets/result.png)
 
 ## SOLANT: Solar Cell Integrated Patch Antenna (Reflectarray Unit Cell)
@@ -52,11 +52,11 @@ The radiating element consists of a specialized copper patch featuring four slit
 ![SOLANT Layer Stackup](assets/cst_stackup.png)
 
 ### 3. Simulation & RF Analysis
-Using CST Microwave Studio, I simulated the electromagnetic interactions across the multi-layer stack. Because the silicon is lossy and the thick coverglass has a high dielectric constant ($\epsilon_r$), standard free-space antenna calculations do not apply. The geometry of the slitted rings and central cross was analyzed to compensate for the reflection loss introduced by the glass.
+Using CST Microwave Studio, I simulated the electromagnetic interactions across the multi-layer stack. Because the silicon is lossy and the thick coverglass has a high dielectric constant (εr), standard free-space antenna calculations do not apply. As demonstrated in the S-Parameter plot, the geometry of the slitted rings and central cross was optimized to compensate for the glass, achieving a resonant frequency near 19.6 GHz with a return loss of approximately -2.25 dB.
 
 ![S-Parameter Graph](assets/cst_s11_plot.png)
 
 ### 4. Experimental Results & Future Scope
-As an experimental learning model, the simulation successfully mapped the complex EM behavior of the integrated unit cell. It provided a verified baseline for the reflection loss and phase shifts caused by the commercial solar materials. This foundational data paves the way for the next phase of my research: scaling this single unit cell into a full, high-gain reflectarray panel capable of simultaneous power generation and telecommunications.
+As an experimental learning model, the simulation successfully mapped the complex EM behavior of the integrated unit cell. It provided a verified baseline for the reflection loss and phase shifts caused by the commercial solar materials. The farfield plot validates the directional radiation pattern at 20 GHz, paving the way for the next phase of my research: scaling this single unit cell into a full, high-gain reflectarray panel capable of simultaneous power generation and telecommunications.
 
 ![Radiation Pattern](assets/cst_radiation.png)

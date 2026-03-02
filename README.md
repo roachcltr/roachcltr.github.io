@@ -84,7 +84,7 @@ The system utilizes a custom-programmed, multi-page SPI TFT display to provide r
 * **Sensory Array:** Integrates multiple DS18B20 probes and DHT22 sensors to independently track the Compressor, Condenser, Evaporator, and main Chamber.
 * **Algorithmic Processing:** The microcontroller actively calculates the internal Heat Index to ensure the thermodynamic properties remain within strict research tolerances.
 
-![Heat Pump Display](assets/heat_pump_ui.png)
+![Heat Pump Display](assets/heat_pump_ui.jpeg)
 
 ---
 
@@ -102,11 +102,11 @@ To maintain optimal thermal efficiency, I programmed a dynamic relay matrix usin
 * **Variable Control:** The system automatically switches between 5V, 9V, and 12V fans and pumps based on predefined temperature brackets.
 * **Failsafe Logic:** Autonomously evaluates humidity levels and terminates the drying cycle when the chamber drops below 20%, preventing over-drying.
 
-![Main Panel](dryer_panel)
+![Main Panel](dryer_panel.jpeg)
 
 ### 3. Remote Command via Telegram API
 Because agricultural drying cycles span several hours, I integrated a bidirectional Telegram Bot API over Wi-Fi. 
 * **Live Logging:** Pushes comprehensive diagnostic logs (temperatures, relay states, and time remaining) to a secure channel every 60 seconds.
 * **Remote Execution:** Researchers can send custom text commands (e.g., `/start 30`, `/stop`) to dynamically control the physical machine from anywhere in the world.
 
-![Telegram Telemetry](assets/telegram_bot.png)
+![Telegram Telemetry](assets/telegram_bot.jpeg)

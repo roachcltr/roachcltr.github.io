@@ -1,4 +1,9 @@
-I am an Electrical Engineering undergraduate at UPI Bandung specializing in Telecommunications, Embedded Systems, and Control Logic. Below is a detailed breakdown of my key engineering projects.
+I am an Electrical Engineering undergraduate at UPI Bandung specializing in Telecommunications, Embedded Systems, and Control Logic. I build and simulate robust systems designed for high-reliability environments.
+
+Below is a detailed breakdown of my key engineering projects, highlighting my hands-on expertise in:
+> Closed-Loop Control Systems: Aerospace flight dynamics and PID tuning via MATLAB/Simulink.
+> RF & Electromagnetic Engineering: Multi-layer dielectric analysis and reflectarray design via CST.
+> System Integration: Bridging software logic with physical simulations and hardware.
 
 ---
 

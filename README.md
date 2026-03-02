@@ -35,6 +35,8 @@ The finely tuned PID controller successfully stabilized the descent vector and m
 
 ![Telemetry Graph](assets/result.png)
 
+---
+
 ## SOLANT: Solar Cell Integrated Patch Antenna (Reflectarray Unit Cell)
 
 **Role:** Undergraduate Researcher / RF & Antenna Designer  
@@ -65,3 +67,47 @@ Using CST Microwave Studio, I simulated the electromagnetic interactions across 
 As an experimental learning model, the simulation successfully mapped the complex EM behavior of the integrated unit cell. It provided a verified baseline for the reflection loss and phase shifts caused by the commercial solar materials. The farfield plot validates the directional radiation pattern at 20 GHz, paving the way for the next phase of my research: scaling this single unit cell into a full, high-gain reflectarray panel capable of simultaneous power generation and telecommunications.
 
 ![Radiation Pattern](assets/cst_radiation.png)
+
+---
+
+## Dryer Heat Pump: Academic Research System (Q1 Scopus)
+
+**Role:** Hardware Programmer & Research Assistant  
+**Tools & Technologies:** ESP32, TFT_eSPI, DHT22/DS18B20 Sensors, Thermodynamics  
+**Focus:** Environmental Data Acquisition, Local UI/UX, Academic Prototyping  
+
+### 1. Project Context & Objective
+Engineered the local control and monitoring architecture for an experimental heat pump drying chamber. This system's data acquisition reliability directly contributed to a successful Q1 Scopus journal publication in *Thermal Science and Engineering Processes*.
+
+### 2. Multi-Zone Thermal Tracking & UI
+The system utilizes a custom-programmed, multi-page SPI TFT display to provide researchers with real-time thermodynamic data. 
+* **Sensory Array:** Integrates multiple DS18B20 probes and DHT22 sensors to independently track the Compressor, Condenser, Evaporator, and main Chamber.
+* **Algorithmic Processing:** The microcontroller actively calculates the internal Heat Index to ensure the thermodynamic properties remain within strict research tolerances.
+
+> 📸 *(Insert a photo of the TFT screen showing the Chamber/Compressor data or the physical heat pump)* > `![Heat Pump Display](assets/heat_pump_ui.png)`
+
+---
+
+## Solar Dryer Collector: IoT Telemetry System (HKI Registered)
+
+**Role:** Lead Hardware Programmer  
+**Tools & Technologies:** ESP32, Telegram Bot API, Wi-Fi Telemetry, C++ Structs  
+**Focus:** Non-Blocking IoT Automation, Remote Command Execution, System Documentation  
+
+### 1. Project Context & Objective
+Developed the automated control and cloud telemetry system for a hybrid solar drying chamber designed for marine products and stevia leaves. Beyond the hardware deployment, I co-authored the official technical operating manual, successfully securing a government-issued Intellectual Property registration (HKI / Hak Cipta) for the system's documentation.
+
+### 2. Non-Blocking Embedded Architecture
+Unlike basic microcontrollers that use blocking `delay()` loops, this system runs on a highly efficient, non-blocking state machine utilizing `millis()`. This allows the ESP32 to simultaneously read sensors, update the local display, and communicate with the cloud without freezing.
+
+### 3. Dynamic Relay Matrix & Auto-Shutoff
+To maintain optimal thermal efficiency, I programmed a dynamic relay matrix using C++ Struct lookup tables.
+* **Variable Control:** The system automatically switches between 5V, 9V, and 12V fans and pumps based on predefined temperature brackets.
+* **Failsafe Logic:** Autonomously evaluates humidity levels and terminates the drying cycle when the chamber drops below 20%, preventing over-drying.
+
+### 4. Remote Command via Telegram API
+Because agricultural drying cycles span several hours, I integrated a bidirectional Telegram Bot API over Wi-Fi. 
+* **Live Logging:** Pushes comprehensive diagnostic logs (temperatures, relay states, and time remaining) to a secure channel every 60 seconds.
+* **Remote Execution:** Researchers can send custom text commands (e.g., `/start 30`, `/stop`) to dynamically control the physical machine from anywhere in the world.
+
+> 📸 *(Insert a screenshot of the Telegram Bot sending data logs, or the physical Solar Collector machine)* > `![Telegram Telemetry](assets/telegram_bot.png)`(assets/telegram_bot.png)`

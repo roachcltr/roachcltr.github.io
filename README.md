@@ -44,7 +44,7 @@ The radiating element consists of a specialized copper patch featuring four slit
 
 * **Antenna Patch (Top):** Copper (Cu) radiating element.
 * **PET Film:** A thin dielectric carrier layer for the patch prior to glass lamination.
-* **Coverglass:** 3.2 mm standard commercial solar glass. With a relative permittivity of $\epsilon_r \approx 6.7$, this thick layer presents a significant RF challenge, historically causing a -2.2 dB reflection loss.
+* **Coverglass:** 3.2 mm standard commercial solar glass. With a relative permittivity of εr ≈ 6.7, this thick layer presents a significant RF challenge, historically causing a -2.2 dB reflection loss.
 * **EVA (Ethylene Vinyl Acetate):** 0.5 mm adhesive bonding layer.
 * **Solar Cell:** Polycrystalline/Monocrystalline Silicon layer. While it absorbs light for power, it acts as a lossy semiconductor in the RF domain, requiring careful simulation to account for EM absorption.
 * **Rear Contact (Bottom):** Aluminum (Al) layer that serves a dual purpose: the bottom electrical contact for the solar cell and the RF Ground Plane for the reflectarray.

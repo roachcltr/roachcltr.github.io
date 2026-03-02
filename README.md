@@ -37,7 +37,7 @@ The blue line shows the altitude of the rocket, while the yellow line shows the 
 **Focus:** RF Simulation, Impedance Matching, Reflectarray Optimization  
 
 ### 1. Project Context & Objective
-This project serves as an experimental foundation for my ongoing academic research into hybrid RF/solar systems. As part of my deep dive into mastering CST Microwave Studio, the primary objective is to simulate and validate the electromagnetic behavior of a high-frequency patch antenna integrated directly onto a commercial solar cell (SOLANT). This establishes the baseline data and simulation skills required for my future, more complex reflectarray designs.
+This project serves as an experimental foundation for my ongoing academic research into hybrid RF/solar systems. As part of my deep dive into mastering CST Microwave Studio, the primary objective is to simulate and validate the electromagnetic behavior of a high-frequency patch antenna integrated directly onto a commercial solar cell (SOLANT).
 
 ### 2. Antenna Geometry & Dielectric Stackup
 The radiating element consists of a specialized copper patch featuring four slitted rings and a central cross. To accurately simulate the real-world electromagnetic behavior, the 3D model in CST required a highly precise multi-layer dielectric stackup:
@@ -49,17 +49,14 @@ The radiating element consists of a specialized copper patch featuring four slit
 * **Solar Cell:** Polycrystalline/Monocrystalline Silicon layer. While it absorbs light for power, it acts as a lossy semiconductor in the RF domain, requiring careful simulation to account for EM absorption.
 * **Rear Contact (Bottom):** Aluminum (Al) layer that serves a dual purpose: the bottom electrical contact for the solar cell and the RF Ground Plane for the reflectarray.
 
-> 📸 *(Insert a screenshot from CST showing the 3D multi-layer stackup or the patch geometry)* > `![SOLANT Layer Stackup](assets/cst_stackup.png)`
+![SOLANT Layer Stackup](assets/cst_stackup.png)
 
 ### 3. Simulation & RF Analysis
 Using CST Microwave Studio, I simulated the electromagnetic interactions across the multi-layer stack. Because the silicon is lossy and the thick coverglass has a high dielectric constant ($\epsilon_r$), standard free-space antenna calculations do not apply. The geometry of the slitted rings and central cross was analyzed to compensate for the reflection loss introduced by the glass.
 
-> 📸 *(Insert a graph from CST showing your S-parameters, specifically the Return Loss / $S_{11}$ plot showing where the antenna resonates)* > `![S-Parameter Graph](assets/cst_s11_plot.png)`
+![S-Parameter Graph](assets/cst_s11_plot.png)
 
 ### 4. Experimental Results & Future Scope
 As an experimental learning model, the simulation successfully mapped the complex EM behavior of the integrated unit cell. It provided a verified baseline for the reflection loss and phase shifts caused by the commercial solar materials. This foundational data paves the way for the next phase of my research: scaling this single unit cell into a full, high-gain reflectarray panel capable of simultaneous power generation and telecommunications.
 
-> 📸 *(Insert a 3D Radiation Pattern plot or a Surface Current Distribution map from CST)* > `![Radiation Pattern](assets/cst_radiation.png)`
-
----
----
+![Radiation Pattern](assets/cst_radiation.png)

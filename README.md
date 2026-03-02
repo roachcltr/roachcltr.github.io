@@ -30,6 +30,10 @@ To test the control logic without a physical rocket, I bridged MATLAB/Python wit
 ### 4. Results & Telemetry
 The finely tuned PID controller successfully stabilized the descent vector and managed the suicide-burn timing, resulting in a fully autonomous, soft touchdown. 
 
+> 📸 *(Insert a graph/plot from MATLAB or Python showing the altitude vs. velocity over time during the landing)* > `![Telemetry Graph](assets/telemetry_plot.png)`
+
+---
+
 ## 📡 Wireless Sensor Network (WSN) & Custom IoT Dashboard
 
 **Role:** Full-Stack Hardware & System Developer  
@@ -58,8 +62,3 @@ Rather than relying on generic third-party platforms, I developed the IoT dashbo
 > 📸 *(Insert a screenshot of your actual IoT Dashboard UI showing the map or data logs)* > `![IoT Dashboard UI](assets/iot_dashboard.png)`
 
 ---
-> 📸 *(Insert a graph/plot from MATLAB or Python showing the altitude vs. velocity over time during the landing)* > `![Telemetry Graph](assets/telemetry_plot.png)`
-
----
-
-*(You can add the next project, like your WSN & IoT Dashboard, right below this line!)*

@@ -23,13 +23,13 @@ The core challenge of this project was maintaining the rocket's stability agains
 ![Simulink Block Diagram](assets/simulink.png)
 
 ### 3. Simulation Environment (Hardware-in-the-Loop Concept)
-To test the control logic without a physical rocket, I bridged MATLAB/Python with Kerbal Space Program using the kRPC server. KSP acted as the physics engine, feeding real-time altitude, velocity, and pitch data to the controller, which then sent throttle and steering commands back to the simulation.
+To test the control logic without a physical rocket, I first designed the simulation in MATLAB, then moved to 3D simulation in KSP by using kOS as it's automated script controller. KSP acted as the physics engine, feeding real-time altitude, velocity, and pitch data to the controller, which then sent throttle and steering commands back to kOS.
 
 ![KSP Simulation](assets/Kerbal.jpeg)
 
 ### 4. Results & Telemetry
 The finely tuned PID controller successfully stabilized the descent vector and managed the suicide-burn timing, resulting in a fully autonomous, soft touchdown. 
-
+The blue line shows the altitude of the rocket, while the yellow line shows the velocity of the rocket, as the rocket gets closer to the ground, the rocket would fall slower and finally lands softly.
 ![Telemetry Graph](assets/result.png)
 
 ---
